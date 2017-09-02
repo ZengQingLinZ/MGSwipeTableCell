@@ -924,6 +924,8 @@ static inline CGFloat mgEaseInOutBounce(CGFloat t, CGFloat b, CGFloat c) {
     return image;
 }
 
+-(void)renderBackgroundForImageCapture:(CGContextRef)context { }
+
 -(void) setAccesoryViewsHidden: (BOOL) hidden
 {
     if (self.accessoryView) {

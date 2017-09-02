@@ -264,6 +264,8 @@ typedef NS_ENUM(NSInteger, MGSwipeEasingFunction) {
 -(void) setSwipeOffset:(CGFloat)offset animation: (nullable MGSwipeAnimation *) animation completion:(nullable void(^)(BOOL finished)) completion;
 -(void) expandSwipe: (MGSwipeDirection) direction animated: (BOOL) animated;
 
+-(void)renderBackgroundForImageCapture:(CGContextRef)context;
+
 /** Refresh method to be used when you want to update the cell contents while the user is swiping */
 -(void) refreshContentView;
 /** Refresh method to be used when you want to dynamically change the left or right buttons (add or remove)
